@@ -1,0 +1,28 @@
+.nav-link.active,
+.nav-link:hover {
+  border-bottom: 3px solid;
+  border-color: white;
+}
+
+.rNav-link.active,
+.rNav-link:hover {
+  border-left: 4px solid white;
+  background: rgba(120, 120, 120, 0.3);
+}
+
+.d-link.active,
+.d-link:hover {
+  border-bottom: 1px solid white;
+}
+
+.crew-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(86, 86, 86);
+}
+.crew-link.active,
+.crew-link:hover {
+  background: white;
+}

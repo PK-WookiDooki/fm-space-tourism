@@ -1,0 +1,21 @@
+.des-layout {
+  background-size: cover;
+}
+
+@media screen and (max-width: 540px) {
+  .des-layout {
+    background-image: url("/src/assets/destination/background-destination-mobile.jpg");
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .des-layout {
+    background-image: url("/src/assets/destination/background-destination-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .des-layout {
+    background-image: url("/src/assets/destination/background-destination-desktop.jpg");
+  }
+}

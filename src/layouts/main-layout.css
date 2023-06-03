@@ -1,0 +1,21 @@
+.main-layout {
+  background-size: cover;
+}
+
+@media screen and (max-width: 540px) {
+  .main-layout {
+    background-image: url("/src/assets/home/background-home-mobile.jpg");
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .main-layout {
+    background-image: url("/src/assets/home/background-home-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .main-layout {
+    background-image: url("/src/assets/home/background-home-desktop.jpg");
+  }
+}

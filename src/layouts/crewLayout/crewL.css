@@ -1,0 +1,21 @@
+.crew-layout {
+  background-size: cover;
+}
+
+@media screen and (max-width: 540px) {
+  .crew-layout {
+    background-image: url("/src/assets/crew/background-crew-mobile.jpg");
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .crew-layout {
+    background-image: url("/src/assets/crew/background-crew-tablet.jpg");
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .crew-layout {
+    background-image: url("/src/assets/crew/background-crew-desktop.jpg");
+  }
+}

@@ -1,0 +1,9 @@
+export { default as Home } from "./home/Home";
+export { default as Moon } from "./destinations/Moon";
+export { default as Mars } from "./destinations/Mars";
+export { default as Europa } from "./destinations/Europa";
+export { default as Titan } from "./destinations/Titan";
+export { default as Douglas } from "./crew/Douglas";
+export { default as Mark } from "./crew/Mark";
+export { default as Victor } from "./crew/Victor";
+export { default as Anousheh } from "./crew/Anousheh";
