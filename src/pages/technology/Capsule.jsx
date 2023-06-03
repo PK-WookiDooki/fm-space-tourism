@@ -4,7 +4,7 @@ import cImage from "../../assets/technology/image-space-capsule-portrait.jpg";
 import { TNav, TechInfo } from "../../components";
 
 const Capsule = () => {
-  const capsule = getTechData()[0];
+  const capsule = getTechData()[2];
   return (
     <div className="flex flex-col gap-10 w-full  lg:ms-auto lg:flex-row-reverse justify-between">
       <div className=" w-full">
