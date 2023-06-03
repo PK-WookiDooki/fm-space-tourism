@@ -75,7 +75,7 @@ const Navbar = () => {
       <nav
         className={` fixed top-0 w-full pt-20 ${
           menu
-            ? " md:hidden h-72 backdrop-blur-xl bg-black bg-opacity-60 py-3"
+            ? " md:hidden h-72 backdrop-blur-lg bg-black py-3"
             : "h-0"
         } duration-200 z-[5] overflow-hidden`}
       >
