@@ -7,3 +7,6 @@ export { default as Douglas } from "./crew/Douglas";
 export { default as Mark } from "./crew/Mark";
 export { default as Victor } from "./crew/Victor";
 export { default as Anousheh } from "./crew/Anousheh";
+export { default as Vehicle } from "./technology/Vehicle";
+export { default as Spaceport } from "./technology/Spaceport";
+export { default as Capsule } from "./technology/Capsule";

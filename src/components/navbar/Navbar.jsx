@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../assets/shared/logo.svg";
 import { Link } from "react-router-dom";
 import { NLink, RLink } from "..";
@@ -9,8 +9,25 @@ const Navbar = () => {
     setMenu(!menu);
   };
 
+  const [isScroll, setIsScroll] = useState(false);
+  const handleScroll = () => {
+    if (window.pageYOffset > 10) {
+      return setIsScroll(true);
+    }
+    return setIsScroll(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <section className={` sticky top-0 lg:backdrop-blur-lg py-5 md:py-0`}>
+    <section
+      className={` ${
+        isScroll ? "bg-black bg-opacity-60" : ""
+      } sticky top-0 backdrop-blur-md py-5 md:py-0`}
+    >
       <nav className=" flex justify-between w-[80%] mx-auto gap-20 items-center z-10 relative">
         <div className="">
           <Link to={"/"} className="">
@@ -58,7 +75,7 @@ const Navbar = () => {
       <nav
         className={` fixed top-0 w-full pt-20 ${
           menu
-            ? " md:hidden h-72 backdrop-blur-xl bg-black bg-opacity-30 py-3"
+            ? " md:hidden h-72 backdrop-blur-xl bg-black bg-opacity-60 py-3"
             : "h-0"
         } duration-200 z-[5] overflow-hidden`}
       >

@@ -4,7 +4,7 @@ import "../nav-link/link.css";
 
 const CrewNav = () => {
   return (
-    <nav className=" flex gap-10 justify-end">
+    <nav className=" flex gap-10 mt-auto ">
       <NavLink
         to={"/crew"}
         end

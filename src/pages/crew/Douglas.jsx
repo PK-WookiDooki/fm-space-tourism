@@ -15,7 +15,7 @@ const Douglas = () => {
           className="mx-auto h-96 lg:h-full lg:w-[420px]"
         />
       </div>
-      <div className="flex flex-col lg:flex-col-reverse lg:w-[50%] items-center justify-center text-center gap-10 py-5 lg:items-start lg:text-left lg:gap-40">
+      <div className="flex flex-col lg:flex-col-reverse lg:w-[50%] items-center text-center gap-10 py-5 lg:items-start lg:text-left lg:gap-40 lg:pt-20 lg:pb-14">
         <CNav />
         <CrewInfo name={douglas.name} bio={douglas.bio} role={douglas.role} />
       </div>

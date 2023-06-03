@@ -26,3 +26,19 @@
 .crew-link:hover {
   background: white;
 }
+
+.tech-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgb(86, 86, 86);
+  font-size: 22px;
+}
+.tech-link.active,
+.tech-link:hover {
+  background: white;
+  color: black;
+}

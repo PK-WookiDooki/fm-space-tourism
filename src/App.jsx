@@ -12,6 +12,9 @@ import {
   Mark,
   Victor,
   Anousheh,
+  Vehicle,
+  Spaceport,
+  Capsule,
 } from "./pages";
 
 const App = () => {
@@ -33,7 +36,11 @@ const App = () => {
           <Route path="victor" element={<Victor />} />
           <Route path="anousheh" element={<Anousheh />} />
         </Route>
-        <Route path="/technology" element={<TLayout />}></Route>
+        <Route path="/technology" element={<TLayout />}>
+          <Route index element={<Vehicle />} />
+          <Route path="spaceport" element={<Spaceport />} />
+          <Route path="capsule" element={<Capsule />} />
+        </Route>
       </Routes>
     </div>
   );
